@@ -16,7 +16,7 @@ jobs:
         id: markanswer
         uses: konjoinfinity/mark-discussion-comment-answer@v1.0.6
         with:
-          token: ${{ secrets.DISCUSS_TOKEN }}
+          github-token: ${{ secrets.DISCUSS_TOKEN }}
           
       - name: Show Mark Answer Output
         run: |
