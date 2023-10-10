@@ -15,10 +15,8 @@ jobs:
       - name: Run Mark Discussion Comment Answer
         id: markanswer
         uses: konjoinfinity/mark-discussion-comment-answer@v1.0.5
-        with:
-           token: ${{secrets.DISCUSS_TOKEN}}
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.DISCUSS_TOKEN}}
           
       - name: Show Mark Answer Output
         run: |
