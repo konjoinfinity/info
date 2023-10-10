@@ -15,7 +15,7 @@ jobs:
       - name: Run Mark Discussion Comment Answer
         id: markanswer
         uses: konjoinfinity/mark-discussion-comment-answer@v1.0.6
-        env:
+        with:
           token: ${{ secrets.DISCUSS_TOKEN }}
           
       - name: Show Mark Answer Output
